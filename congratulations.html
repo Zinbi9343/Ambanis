@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! Recharge Complete</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .user-feedback {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.user-rating {
+  color: #ffc107; /* Yellow color for star ratings */
+  margin-left: 5px;
+}
+
+.user-feedback {
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user-info .user-rating {
+  margin-left: auto; /* Push rating to the right */
+}
+
+.user-feedback h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Hover effect for user feedback */
+.user-feedback li:hover {
+  background-color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations!</h1>
+        <p>Your recharge is successfully done.</p>
+        <p>Thank you for participating in our sharing campaign!</p>
+        <button class="button" onclick="redirectToHome()">Go to Homepage</button>
+    </div>
+<div>
+  
+  <section class="user-feedback">
+  <h2>User Feedback</h2>
+  <ul class="user-list">
+    <li>
+      <div class="user-info">
+        <span class="user-name">Rajesh Kumar</span>
+        <span class="user-rating">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"धन्यवाद! तेज और विश्वसनीय सेवा! अगली बार ज़रूर इस्तेमाल करूँगा।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Priya Patel</span>
+        <span class="user-rating">⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"सुपरब वेबसाइट, मुझे बहुत पसंद आई। बहुत बढ़िया!"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Amit Sharma</span>
+        <span class="user-rating">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"आसान इंटरफेस और तेज रिचार्ज प्रक्रिया। बहुत शानदार!"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Anjali Gupta</span>
+        <span class="user-rating">⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"सेवा में सुधार की आवश्यकता है, लेकिन सामान्यत: ठीक है।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Suresh Singh</span>
+        <span class="user-rating">⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"विश्वसनीय और सुविधाजनक। अब तक कोई शिकायत नहीं!"</p>
+    </li>
+    <!-- Add more user feedback items as needed -->
+  </ul>
+</section><section class="user-feedback">
+  <h2>User Feedback</h2>
+  <ul class="user-list">
+    <li>
+      <div class="user-info">
+        <span class="user-name">Deepak Verma</span>
+        <span class="user-rating">⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"बहुत ही उपयोगी सेवा, धन्यवाद। अब और भी अधिक ऑफर्स हो सकते हैं।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Ritu Yadav</span>
+        <span class="user-rating">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"तेज़ और सुविधाजनक सेवा, सचमुच शानदार।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Vikas Singh</span>
+        <span class="user-rating">⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"मैंने कभी इस से पहले किसी ऐसी वेबसाइट का उपयोग नहीं किया, लेकिन यहाँ पर मुफ्त रिचार्ज का विकल्प मुझे बहुत पसंद आया।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Neha Gupta</span>
+        <span class="user-rating">⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"सेवा सामान्य है, कुछ अधिक फीचर्स और ऑफर्स की आवश्यकता है।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Ajay Kumar</span>
+        <span class="user-rating">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"विश्वसनीयता और सुविधा की श्रेणी में शीर्ष पर।"</p>
+    </li>
+    <!-- Add 5 more user feedback items -->
+  </ul>
+</section><section class="user-feedback">
+  <h2>User Feedback</h2>
+  <ul class="user-list">
+    <li>
+      <div class="user-info">
+        <span class="user-name">Divya Sharma</span>
+        <span class="user-rating">⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"रिचार्ज की प्रक्रिया थोड़ी धीमी है, लेकिन सेवा ठीक है।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Arjun Patel</span>
+        <span class="user-rating">⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"वेबसाइट बहुत अच्छी है, मुफ्त रिचार्ज का बहुत बड़ा लाभ है।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Manisha Singh</span>
+        <span class="user-rating">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"बहुत ही सुविधाजनक और अच्छी सेवा। यहाँ से रिचार्ज करना बहुत ही आसान है।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Ankit Verma</span>
+        <span class="user-rating">⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"कुछ अधिक विकल्प और ऑफर्स जोड़ने की जरूरत है।"</p>
+    </li>
+    <li>
+      <div class="user-info">
+        <span class="user-name">Pooja Gupta</span>
+        <span class="user-rating">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p class="user-feedback">"रिचार्ज की प्रक्रिया मुफ्त होने के बावजूद बहुत ही तेज़ है। बहुत धन्यवाद।"</p>
+    </li>
+    <!-- Add 5 more user feedback items -->
+  </ul>
+</section>
+</div>
+    <script>
+        function redirectToHome() {
+            // Redirect to homepage or desired destination
+            window.location.href = "index2.html";
+        }
+    </script>
+</body>
+</html>

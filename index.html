@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+        }
+        input[type="tel"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover             background-color: #0056b3;
+        }
+        .error-message {
+            color: #ff0000;
+        }
+        .footer-container {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding inside the container */
+  text-align: center; /* Align text to the center */
+}
+
+.footer-container {
+  background-color: grey; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding inside the container */
+  text-align: center; /* Align text to the center */
+}
+
+.footer-container a {
+  color: black; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-container a:hover {
+  text-decoration: underline; 
+  color: black;/* Add underline on hover */
+}
+
+.footer-container .instagram-icon {
+  margin: 0 5px; /* Add space between icons */
+  width: 34px; /* Adjust the width of the icons */
+}
+    </style>
+</head>
+<body>
+   <div class="container">
+     <h1>NEWS</h1>
+     <p>🎉 Reliance Industries Limited, under the leadership of Mukesh Ambani, is thrilled to announce a special offer in celebration of Anant Ambani's upcoming pre-wedding festivities! As a token of gratitude to our loyal customers, Reliance Jio is offering FREE recharge vouchers to all its users across India. This generous gesture aims to spread joy and happiness during this joyous occasion. We invite you to join us in celebrating Anant Ambani's happiness and enjoy uninterrupted connectivity on India's largest network. Don't miss out on this incredible opportunity to stay connected with your loved ones and be a part of the celebrations. Hurry, claim your free recharge voucher now and make the most of this special offer! #AnantAmbaniWedding #RelianceJio #FreeRecharge 🎊</p>
+   </div>
+    <div class="container">
+        <h1>Enter Your Phone Number</h1>
+        <form id="phoneForm" action="share.html" method="post" onsubmit="return validateForm()">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+            <span class="error-message" id="phoneError"></span>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="container">
+      <h1>AGAIN</h1>
+      <p>🎉 We're thrilled to share the exciting news once more! Reliance Industries Limited, led by Mukesh Ambani, is extending a special offer in honor of Anant Ambani's upcoming pre-wedding festivities! As a token of appreciation for our valued customers, Reliance Jio is delighted to provide FREE recharge vouchers to all users nationwide. This generous initiative aims to spread joy and celebrate this auspicious occasion with you. Join us in commemorating Anant Ambani's happiness and enjoy seamless connectivity on India's largest network. Don't miss out on this exclusive opportunity to stay connected with your dear ones and partake in the festivities. Claim your free recharge voucher now and seize the moment! #AnantAmbaniWedding #RelianceJio #FreeRecharge 🎊</p>
+    </div>
+<footer class="footer-container">
+  <p>Warm regards,<br>Zuber Khan</p>
+  <p>Reliance Customer</p>
+  <div>
+    <a href="https://www.instagram.com/royal_pathan.2023" target="_blank"><img src="open.png" alt="Instagram" class="instagram-icon"></a>
+    <a href="https://www.instagram.com/ai_pathan.2025" target="_blank"><img src="open.png" alt="Instagram" class="instagram-icon"></a>
+    <a href="https://www.instagram.com/editz_pathan.2025" target="_blank"><img src="open.png" alt="Instagram" class="instagram-icon"></a>
+  </div>
+</footer>
+
+    <script>
+        function validateForm() {
+            var phoneInput = document.getElementById('phone');
+            var phoneError = document.getElementById('phoneError');
+
+            if (!phoneInput.checkValidity()) {
+                phoneError.textContent = "Please enter a valid 10-digit phone number.";
+                return false;
+            } else {
+                phoneError.textContent = "";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

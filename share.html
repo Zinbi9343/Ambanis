@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Page</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .meter {
+            background-color: #ddd;
+            height: 30px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .progress {
+            background-color: #4caf50;
+            height: 100%;
+            border-radius: 5px;
+            transition: width 0.3s ease-in-out;
+        }
+        .share-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .share-success {
+            color: #4caf50;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+              .footer-container {
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding inside the container */
+  text-align: center; /* Align text to the center */
+}
+.footer-container {
+  background-color: grey; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px; /* Padding inside the container */
+  text-align: center; /* Align text to the center */
+}
+
+.footer-container a {
+  color: black; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.footer-container a:hover {
+  text-decoration: underline; 
+  color: black;/* Add underline on hover */
+}
+
+.footer-container .instagram-icon {
+  margin: 0 5px; /* Add space between icons */
+  width: 34px; /* Adjust the width of the icons */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Share Meter</h1>
+        <div class="meter">
+            <div class="progress" id="progress"></div>
+        </div>
+        <button class="share-button" onclick="share()">Accept</button>
+        <p id="shareStatus"></p>
+    </div>
+<div class="container">
+  <h1>DEAR VALUABLE USERS</h1>
+  <p>Dear Valued Users,</p>
+
+<p>Thank you for visiting our free recharge website powered by Reliance and curated by Zuber Khan. We appreciate your interest and trust in our platform. Our goal is to provide you with a seamless and rewarding experience while offering you the opportunity to recharge your mobile phones for free.</p>
+
+<p>At our website, we understand the importance of staying connected in today's fast-paced world. Whether it's making important calls, sending urgent messages, or accessing vital information, having a charged mobile device is essential. That's why we're dedicated to helping you keep your phones topped up without any hassle.</p><p>
+
+<p>Our partnership with Reliance ensures that you receive reliable and efficient recharge services. Reliance is known for its commitment to quality and innovation, and we're proud to collaborate with them to bring you the best recharge experience possible. With their extensive network coverage and cutting-edge technology, you can trust that your recharges will be processed swiftly and securely.</p>
+
+<p>Zuber Khan, our esteemed curator, brings his expertise and insights to our platform, ensuring that we meet the diverse needs of our users. His dedication to excellence and customer satisfaction drives us to continually enhance our services and provide you with the latest features and promotions.</p>
+
+<p>As you explore our website, you'll discover a range of recharge options tailored to suit your preferences and requirements. Whether you're looking for talk time, data packs, or special offers, we have you covered. Plus, with our user-friendly interface and responsive customer support team, we're here to assist you every step of the way.</p>
+
+<p>We value your feedback and suggestions, as they help us improve and grow. If you have any questions, comments, or concerns, please don't hesitate to reach out to us. Your satisfaction is our priority, and we're committed to delivering an exceptional recharge experience that exceeds your expectations.</p>
+
+<p>Once again, thank you for choosing our free recharge website. We look forward to serving you and helping you stay connected effortlessly.</p>
+
+<p>Best regards,</p>
+<p>Zuber  khan</p>
+</div>
+  <footer class="footer-container">
+  <p>Warm regards,<br>Zuber Khan</p>
+  <p>Reliance Customer</p>
+  <div>
+    <a href="https://www.instagram.com/royal_pathan.2023" target="_blank"><img src="open.png" alt="Instagram" class="instagram-icon"></a>
+    <a href="https://www.instagram.com/ai_pathan.2025" target="_blank"><img src="open.png" alt="Instagram" class="instagram-icon"></a>
+    <a href="https://www.instagram.com/editz_pathan.2025" target="_blank"><img src="open.png" alt="Instagram" class="instagram-icon"></a>
+  </div>
+</footer>
+
+    <script>
+        var sharedCount = 0;
+
+        function share() {
+            // Redirect to WhatsApp
+            window.location.href = "congratulations.html";
+            // Placeholder for sharing functionality
+            // Example: Integrate with social media APIs or server-side tracking
+            simulateShare(); // For demonstration purposes
+        }
+
+        function simulateShare() {
+            setTimeout(function() {
+                sharedCount++;
+                updateMeter();
+                if (sharedCount >= 10) {
+                    enableSubmit();
+                }
+                showShareSuccess();
+            }, 1000); // Simulate sharing delay
+        }
+
+        function updateMeter() {
+            var progress = (sharedCount / 10) * 100;
+            document.getElementById("progress").style.width = progress + "%";
+        }
+
+        function enableSubmit() {
+            // Enable submit button and redirect to new page
+            // For demonstration, just displaying a message
+            document.getElementById("submitRedirect").disabled = false;
+            document.getElementById("shareStatus").innerHTML = "You've reached 10 shares! You can now submit.";
+            setTimeout(function() {
+                window.location.href = "congratulations.html"; // Redirect to congratulations page
+            }, 2000); // Redirect after 2 seconds
+        }
+
+        function showShareSuccess() {
+            // Display success message after sharing
+            document.getElementById("shareStatus").innerHTML = "Shared successfully!";
+            setTimeout(function() {
+                document.getElementById("shareStatus").innerHTML = "";
+            }, 2000); // Clear message after 2 seconds
+        }
+    </script>
+</body>
+</html>
